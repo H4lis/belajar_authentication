@@ -31,7 +31,19 @@ List<FilmModel> nowPlaying = [
 ];
 List<FilmModel> myTicket = [
   FilmModel(
+    title: "Ant Man Wasp: Quantumania",
+    image: "assets/images/film6.png",
+  ),
+  FilmModel(
     title: "Avengers - Infinity War",
     image: "assets/images/film.png",
+  ),
+  FilmModel(
+    title: "Avatar 2: The Way Of Water",
+    image: "assets/images/film4.png",
+  ),
+  FilmModel(
+    title: "Fox puss in Boots: The last Wish",
+    image: "assets/images/film5.png",
   ),
 ];
