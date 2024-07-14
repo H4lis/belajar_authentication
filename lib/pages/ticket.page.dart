@@ -1,3 +1,4 @@
+import 'package:booking_tiket_film/models/film_model.dart';
 import 'package:booking_tiket_film/shared/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -20,11 +21,7 @@ class TicketPage extends StatelessWidget {
       ),
       backgroundColor: blackColor,
       body: Column(
-        children: [
-          MyTicketCard(),
-          MyTicketCard(),
-          MyTicketCard(),
-        ],
+        children: [MyTicketCard(film: myTicket)],
       ),
     );
   }

@@ -80,14 +80,21 @@ class _PesananPage2State extends State<MoviePage> {
             Expanded(
               child: Column(
                 children: [
-                  Container(
-                    width: 191,
-                    height: 267,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        image: DecorationImage(
-                            image: AssetImage("assets/images/film.png"))),
+                  SizedBox(
+                    height: 240,
+                  ),
+                  Text(
+                    "Belum ada film kessi",
+                    style: whiteTextStyle.copyWith(fontSize: 14),
                   )
+                  // Container(
+                  //   width: 191,
+                  //   height: 267,
+                  //   decoration: BoxDecoration(
+                  //       borderRadius: BorderRadius.circular(12),
+                  //       image: DecorationImage(
+                  //           image: AssetImage("assets/images/film.png"))),
+                  // )
                 ],
               ),
             ),

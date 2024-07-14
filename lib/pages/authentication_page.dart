@@ -1,4 +1,5 @@
-
+import 'package:booking_tiket_film/pages/login_page.dart';
+import 'package:booking_tiket_film/pages/register_page.dart';
 import 'package:booking_tiket_film/pages/wrapper_page.dart';
 import 'package:booking_tiket_film/shared/theme.dart';
 import 'package:booking_tiket_film/widgets/button_widget.dart';
@@ -69,7 +70,7 @@ class AuthenticationPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => WrapperPage(),
+                        builder: (context) => LoginPage(),
                       ));
                 },
               ),
@@ -79,7 +80,13 @@ class AuthenticationPage extends StatelessWidget {
               ButtonWidget(
                 onButPrimary: false,
                 title: "Sing Up",
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RegisterPage(),
+                      ));
+                },
               ),
               SizedBox(
                 height: 32,

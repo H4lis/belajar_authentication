@@ -1,5 +1,7 @@
+import 'package:booking_tiket_film/models/film_model.dart';
 import 'package:booking_tiket_film/shared/theme.dart';
 import 'package:booking_tiket_film/widgets/film_card.dart';
+import 'package:booking_tiket_film/widgets/film_now_card.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -101,50 +103,7 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 347,
-                    width: 42,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(16),
-                        topRight: Radius.circular(16),
-                      ),
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage("assets/images/film_now.png"),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    height: 440,
-                    width: 310,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage("assets/images/film.png"),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    height: 347,
-                    width: 44,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(16),
-                        topLeft: Radius.circular(16),
-                      ),
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage("assets/images/film_now2.png"),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              FilmNowCard(film: nowPlaying),
               SizedBox(
                 height: 8,
               ),
@@ -192,28 +151,7 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    SizedBox(
-                      width: defaultMargin,
-                    ),
-                    FilmCard(
-                      title: "Avatar 2: The Way Of Water",
-                      image: "assets/images/film4.png",
-                    ),
-                    FilmCard(
-                      title: "Fox puss in Boots: The last Wish",
-                      image: "assets/images/film5.png",
-                    ),
-                    FilmCard(
-                      title: "Ant Man Wasp: Quantumania",
-                      image: "assets/images/film6.png",
-                    ),
-                  ],
-                ),
-              ),
+              FilmCard(film: comingSoon),
               SizedBox(
                 height: 90,
               ),

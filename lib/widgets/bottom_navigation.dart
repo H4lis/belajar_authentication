@@ -13,7 +13,7 @@ class BottomNavigationWidget extends StatelessWidget {
   }) : super(key: key);
 
   final List<String> itemBar = [
-    'home',
+    'Home',
     'Ticket',
     'Movie',
     'Profile',
