@@ -83,9 +83,9 @@ class AuthenticationPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => RegisterPage(),
-                      ));
+                      MaterialPageRoute(builder: (context) => WrapperPage()
+                          // RegisterPage(),
+                          ));
                 },
               ),
               SizedBox(

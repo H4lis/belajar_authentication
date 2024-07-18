@@ -1,3 +1,4 @@
+import 'package:booking_tiket_film/pages/selecr_seat_page.dart';
 import 'package:booking_tiket_film/shared/theme.dart';
 import 'package:booking_tiket_film/widgets/bottom_navigation.dart';
 import 'package:booking_tiket_film/widgets/button_widget.dart';
@@ -146,7 +147,14 @@ class DetailFilmPage extends StatelessWidget {
                   height: 30,
                 ),
                 ButtonWidget(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SelectSeat(),
+                      ),
+                    );
+                  },
                   title: "Continue",
                 )
               ],
